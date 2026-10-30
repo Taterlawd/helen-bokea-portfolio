@@ -1,0 +1,55 @@
+:root {
+  --bg: #eef3f4;
+  --surface: #f6fafb;
+  --text: #12363a;
+  --muted: rgba(18, 54, 58, 0.72);
+
+  --teal-700: #1f6f74;
+  --teal-600: #2b8085;
+  --teal-800: #16585c;
+
+  --gold-500: #caa23a;
+  --gold-400: #d3b055;
+
+  --border: rgba(18, 54, 58, 0.12);
+
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+  --shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+
+  --container: min(1120px, 92vw);
+}
+
+.app {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.main {
+  width: var(--container);
+  margin: 0 auto;
+  padding: 28px 0 40px;
+}
+
+.footer {
+  border-top: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.footerInner {
+  width: var(--container);
+  margin: 0 auto;
+  padding: 18px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+@media (max-width: 700px) {
+  .footerInner {
+    flex-direction: column;
+  }
+}
